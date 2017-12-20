@@ -37,6 +37,7 @@ Use Google calendar in mac calendar : https://support.google.com/calendar/answer
 # Install Atom
 ```
 brew cask install atom
+apm install --packages-file atom_package_list.txt
 ```
 # Install Slack
 ```
@@ -44,6 +45,7 @@ brew cask install slack
 ```
 # Configure git
 ```
+brew install git-lfs
 git config --global user.name "Zaccharie Ramzi"
 git config --global user.email "zaccharie@xbird.io"
 ```
