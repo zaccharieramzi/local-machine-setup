@@ -47,3 +47,19 @@ brew cask install slack
 git config --global user.name "Zaccharie Ramzi"
 git config --global user.email "zaccharie@xbird.io"
 ```
+# Terminal
+## Zsh and oh-my-zsh
+```
+brew install zsh zsh-completions zsh-syntax-highlighting
+curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
+chsh -s /usr/local/bin/zsh
+```
+This requires password
+## iTerm2
+```
+brew cask install iterm2
+```
+### Preferences
+- In Keys, set Hotkey.
+- In Profiles, set window transparency (1/3), and style to Full-width, top of the screen.
+- In Advanced/Hotkey, set "If the only window open is a hotkey window"
