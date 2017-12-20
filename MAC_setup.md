@@ -17,6 +17,8 @@ This requires password
 ```
 mkdir ~/.ssh
 ssh-keygen -t rsa -b 4096 -C "zaccharie.ramzi@gmail.com" -q -N "" -f ~/.ssh/id_rsa
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_rsa
 ```
 ## Add it to Github Account
 ```
