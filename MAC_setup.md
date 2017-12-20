@@ -63,3 +63,7 @@ brew cask install iterm2
 - In Keys, set Hotkey.
 - In Profiles, set window transparency (1/3), and style to Full-width, top of the screen.
 - In Advanced/Hotkey, set "If the only window open is a hotkey window"
+## Tree
+```
+brew install tree
+```
