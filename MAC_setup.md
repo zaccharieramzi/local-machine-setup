@@ -31,3 +31,19 @@ mkdir -p ~/workspace/gists_and_docs
 cd ~/workspace/gists_and_docs
 git clone git@github.com:zaccharieramzi/local-machine-setup.git
 ```
+# Settings
+Make docker show up and hide automatically
+Use Google calendar in mac calendar : https://support.google.com/calendar/answer/99358?hl=en
+# Install Atom
+```
+brew cask install atom
+```
+# Install Slack
+```
+brew cask install slack
+```
+# Configure git
+```
+git config --global user.name "Zaccharie Ramzi"
+git config --global user.email "zaccharie@xbird.io"
+```
