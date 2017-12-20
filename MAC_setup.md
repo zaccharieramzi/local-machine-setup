@@ -60,7 +60,7 @@ This requires password
 brew cask install iterm2
 ```
 ### Preferences
-- In Keys, set Hotkey.
+- In Keys, set Hotkey and [follow this website](https://coderwall.com/p/ds2dha/word-line-deletion-and-navigation-shortcuts-in-iterm2) for useful shortcuts.
 - In Profiles, set window transparency (1/3), and style to Full-width, top of the screen.
 - In Advanced/Hotkey, set "If the only window open is a hotkey window"
 ## Tree
