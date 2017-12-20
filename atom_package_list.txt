@@ -1,8 +1,8 @@
-language-protobuf@0.7.1
-linter@2.2.0
-linter-pylint@2.1.0
-linter-ui-default@1.6.10
-python-autopep8@0.1.3
-python-indent@1.1.2
-python-isort@0.0.7
-sort-lines@0.14.0
+language-protobuf
+linter
+linter-pylint
+linter-ui-default
+python-autopep8
+python-indent
+python-isort
+sort-lines
