@@ -27,5 +27,5 @@ open http://github.com
 ```
 mkdir -p ~/workspace/gists_and_docs
 cd ~/workspace/gists_and_docs
-git clone address
+git clone git@github.com:zaccharieramzi/local-machine-setup.git
 ```
