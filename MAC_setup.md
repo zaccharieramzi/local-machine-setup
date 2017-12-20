@@ -67,3 +67,19 @@ brew cask install iterm2
 ```
 brew install tree
 ```
+# Python
+```
+brew install python3
+```
+## pip
+```
+curl https://bootstrap.pypa.io/get-pip.py > get-pip.py
+sudo python get-pip.py
+rm get-pip.py
+```
+This requires password
+## virtualenv
+```
+sudo pip install virtualenv
+```
+This requires password
