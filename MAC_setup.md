@@ -12,7 +12,7 @@ brew tap caskroom/cask
 brew cask install google-chrome
 ```
 This requires password
-# SSH keys
+# SSH key
 ## Generate it
 ```
 mkdir ~/.ssh
@@ -68,6 +68,10 @@ brew cask install iterm2
 ## Tree
 ```
 brew install tree
+```
+## Htop
+```
+brew install htop
 ```
 # Python
 ```
