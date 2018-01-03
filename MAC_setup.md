@@ -89,3 +89,13 @@ This requires password
 sudo pip install virtualenv
 ```
 This requires password
+
+# Leisure
+## Spotify
+```
+brew cask install spotify
+```
+### Spotmenu
+```
+brew cask install spotmenu
+```
