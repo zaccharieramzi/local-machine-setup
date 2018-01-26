@@ -90,6 +90,11 @@ sudo pip install virtualenv
 ```
 This requires password
 
+# Docker
+https://docs.docker.com/docker-for-mac/install/
+```
+brew cask install kitematic
+```
 # Leisure
 ## Spotify
 ```
