@@ -35,4 +35,33 @@ git config --global user.email "zaccharie.ramzi@gmail.com"
 ```
 sudo apt-get install zsh
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+chsh -s `which zsh`
+```
+
+## Tree
+```
+sudo apt-get install tree
+```
+
+## Htop
+```
+sudo apt-get install htop
+```
+
+# Python
+```
+sudo apt-get install python3.6
+sudo apt-get install python
+```
+
+## pip
+```
+curl https://bootstrap.pypa.io/get-pip.py > get-pip.py
+sudo python get-pip.py
+rm get-pip.py
+```
+
+## virtualenv
+```
+sudo pip install virtualenv
 ```
