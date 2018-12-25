@@ -36,5 +36,3 @@ git config --global user.email "zaccharie.ramzi@gmail.com"
 sudo apt-get install zsh
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
-This requires password
-## iTerm2
