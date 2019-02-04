@@ -53,6 +53,7 @@ sudo apt-get install htop
 sudo add-apt-repository ppa:webupd8team/atom
 sudo apt update
 sudo apt install atom
+apm install --package-file atom_package_list.txt
 ```
 
 # Python
