@@ -48,6 +48,13 @@ sudo apt-get install tree
 sudo apt-get install htop
 ```
 
+# Atom
+```
+sudo add-apt-repository ppa:webupd8team/atom
+sudo apt update
+sudo apt install atom
+```
+
 # Python
 ```
 sudo apt-get install python3.6
