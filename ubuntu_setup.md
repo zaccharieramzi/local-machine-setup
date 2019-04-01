@@ -58,7 +58,7 @@ apm install --package-file atom_package_list.txt
 
 # Python
 ```
-sudo apt-get install python3.6
+sudo apt-get install python3.6 python3-distutils
 sudo apt-get install python
 ```
 
