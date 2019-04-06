@@ -39,6 +39,7 @@ chsh -s `which zsh`
 ```
 
 ## fish-like autosuggestions
+(to add in plugins)
 ```
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 ```
@@ -63,6 +64,8 @@ apm install --package-file atom_package_list.txt
 
 # Python
 ```
+sudo add-apt-repository ppa:jonathonf/python-3.6
+sudo apt-get update
 sudo apt-get install python3.6 python3-distutils
 sudo apt-get install python
 ```
