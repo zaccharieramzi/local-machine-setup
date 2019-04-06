@@ -6,3 +6,4 @@ python-autopep8
 python-indent
 python-isort
 sort-lines
+multi-cursor
