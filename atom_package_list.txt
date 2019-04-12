@@ -7,3 +7,4 @@ python-indent
 python-isort
 sort-lines
 multi-cursor
+git-blame
