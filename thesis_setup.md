@@ -65,11 +65,39 @@ echo '# sparse2d
 export PATH=$PATH:$HOME/workspace/pysap/build/' >> ~/.zshrc
 ```
 
+## CUDA & affiliates
+Taken from: https://www.tensorflow.org/install/gpu (adapt if not ubuntu1604)
+```
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/extras/CUPTI/lib64 &&\
+sudo apt-key adv --fetch-keys http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64/7fa2af80.pub &&\
+wget http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64/cuda-repo-ubuntu1604_9.1.85-1_amd64.deb &&\
+sudo apt install ./cuda-repo-ubuntu1604_9.1.85-1_amd64.deb &&\
+wget http://developer.download.nvidia.com/compute/machine-learning/repos/ubuntu1604/x86_64/nvidia-machine-learning-repo-ubuntu1604_1.0.0-1_amd64.deb &&\
+sudo apt install ./nvidia-machine-learning-repo-ubuntu1604_1.0.0-1_amd64.deb &&\
+sudo apt update &&\
+sudo mkdir /usr/lib/nvidia &&\
+sudo apt-get install --no-install-recommends nvidia-410 &&\
+sudo apt install cuda9.0 cuda-cublas-9-0 cuda-cufft-9-0 cuda-curand-9-0 \
+    cuda-cusolver-9-0 cuda-cusparse-9-0 libcudnn7=7.2.1.38-1+cuda9.0 \
+    libnccl2=2.2.13-1+cuda9.0 cuda-command-line-tools-9-0 &&\
+sudo apt update &&\
+sudo apt install libnvinfer4=4.1.2-1+cuda9.0 &&\
+reboot
+```
+
 ## Learned Primal Dual
 ```
 deactivate &&\
 cd ~/workspace/learned_primal_dual &&\
 mkvenv &&\
 cdvenv . &&\
-pip install -e . &&\
+pip install -r requirements.txt &&\
+sudo apt-get install build-essential libtool autoconf automake libboost-dev &&\
+cd ../ &&\
+g clone git@github.com:astra-toolbox/astra-toolbox.git &&\
+cd build/linux &&\
+sh autogen.sh &&\
+sh configure --with-cuda=/usr/local/cuda \
+            --with-python=python \
+            --with-install-type=module
 ```
