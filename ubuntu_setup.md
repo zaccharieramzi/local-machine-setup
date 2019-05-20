@@ -67,8 +67,8 @@ sudo apt-get install htop
 ## Aliases
 ```
 echo '# dev convenience
-alias jn=jupyter notebook
-alias mkvenv=virtualenv -p /usr/bin/python3.6 venv
+alias jn="jupyter notebook"
+alias mkvenv="virtualenv -p /usr/bin/python3.6 venv"
 
 # convenience cd
 function cdvenv(){
