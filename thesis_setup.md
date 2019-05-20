@@ -1,7 +1,7 @@
 # Repos
-## Clonte them
+## Clone them
 
-```shell
+```
 g clone git@github.com:zaccharieramzi/understanding-unets.git && \
 g clone git@github.com:zaccharieramzi/local-machine-setup.git && \
 g clone git@github.com:zaccharieramzi/learned_primal_dual.git && \
@@ -12,7 +12,7 @@ g clone git@github.com:zaccharieramzi/pysap.git
 ```
 
 ## Set the original repo
-```shell
+```
 cd learned_primal_dual &&\
 g remote add upstream https://github.com/adler-j/learned_primal_dual &&\
 cd ../odl &&\
