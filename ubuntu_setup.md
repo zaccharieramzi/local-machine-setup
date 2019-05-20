@@ -20,7 +20,7 @@ ssh-add ~/.ssh/id_rsa
 ## Add it to Github Account
 ```
 cat ~/.ssh/id_rsa.pub
-open http://github.com
+open https://github.com/settings/ssh/new
 ```
 
 # Install and configure git
