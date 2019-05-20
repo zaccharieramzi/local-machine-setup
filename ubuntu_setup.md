@@ -91,7 +91,7 @@ git config --global core.editor "atom"
 ```
 sudo add-apt-repository ppa:jonathonf/python-3.6 &&\
 sudo apt-get update &&\
-sudo apt-get install python3.6 python3-distutils &&\
+sudo apt-get install python3.6 python3-distutils python3.6-dev &&\
 sudo apt-get install python
 ```
 
