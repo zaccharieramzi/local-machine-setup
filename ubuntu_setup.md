@@ -27,7 +27,8 @@ open https://github.com/settings/ssh/new
 ```
 sudo apt-get install git &&\
 git config --global user.name "Zaccharie Ramzi" &&\
-git config --global user.email "zaccharie.ramzi@gmail.com"
+git config --global user.email "zaccharie.ramzi@gmail.com" &&\
+git config --global push.default matching
 ```
 
 ## Create global gitignore
