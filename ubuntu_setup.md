@@ -64,6 +64,20 @@ sudo apt-get install tree
 sudo apt-get install htop
 ```
 
+## Aliases
+```
+echo '# dev convenience
+alias jn=jupyter notebook
+alias mkvenv=virtualenv -p /usr/bin/python3.6 venv
+
+# convenience cd
+function cdvenv(){
+  cd $1;
+  source venv/bin/activate;
+}
+compdef _dirs cdvenv' >> ~/.zshrc
+```
+
 # Atom
 ```
 sudo add-apt-repository ppa:webupd8team/atom &&\
