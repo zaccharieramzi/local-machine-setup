@@ -95,9 +95,11 @@ pip install -r requirements.txt &&\
 sudo apt-get install build-essential libtool autoconf automake libboost-dev &&\
 cd ../ &&\
 g clone git@github.com:astra-toolbox/astra-toolbox.git &&\
-cd build/linux &&\
+cd astra-toolbox/build/linux &&\
 sh autogen.sh &&\
 sh configure --with-cuda=/usr/local/cuda \
             --with-python=python \
-            --with-install-type=module
+            --with-install-type=module &&\
+make &&\
+make install
 ```
