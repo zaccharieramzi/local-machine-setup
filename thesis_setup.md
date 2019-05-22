@@ -101,5 +101,17 @@ sh configure --with-cuda=/usr/local/cuda \
             --with-python=python \
             --with-install-type=module &&\
 make &&\
-make install
+make install &&\
+pip install numpy cython pybind11 &&\
+export CPLUS_INCLUDE_PATH=/usr/include/python3.6m &&\
+pip install git+https://github.com/pyNFFT/pyNFFT
+```
+
+## Understanding U-Nets
+```
+deactivate &&\
+cd ~/workspace/understanding-unets &&\
+mkvenv &&\
+cdvenv . &&\
+pip install -r requirements.txt
 ```
