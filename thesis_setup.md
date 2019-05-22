@@ -105,7 +105,8 @@ make &&\
 make install &&\
 pip install numpy cython pybind11 &&\
 export CPLUS_INCLUDE_PATH=/usr/include/python3.6m &&\
-pip install git+https://github.com/pyNFFT/pyNFFT
+pip install git+https://github.com/pyNFFT/pyNFFT &&\
+pip install https://github.com/adler-j/adler/archive/master.zip
 ```
 
 ## Understanding U-Nets
