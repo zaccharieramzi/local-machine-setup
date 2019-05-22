@@ -56,7 +56,8 @@ pip install git+https://github.com/pyNFFT/pyNFFT &&\
 pip install -e ../ModOpt &&\
 pip install -e ../pysap-astro &&\
 pip install -e ../pysap &&\
-pip install -r ~/workspace/local-machine-setup/python_science_reqs.txt
+pip install -r ~/workspace/local-machine-setup/python_science_reqs.txt &&\
+pip install pyqt5
 ```
 
 ## Sparse2d
