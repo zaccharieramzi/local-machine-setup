@@ -47,7 +47,8 @@ brew cask install slack
 ```
 brew install git-lfs &&\
 git config --global user.name "Zaccharie Ramzi" &&\
-git config --global user.email "zaccharie@xbird.io"
+git config --global user.email "zaccharie.ramzi@gmail.com" &&\
+git config --global push.default matching
 ```
 # Terminal
 ## Zsh and oh-my-zsh
