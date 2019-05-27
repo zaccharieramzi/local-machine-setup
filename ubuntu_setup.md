@@ -83,7 +83,7 @@ compdef _dirs cdvenv' >> ~/.zshrc
 sudo add-apt-repository ppa:webupd8team/atom &&\
 sudo apt update &&\
 sudo apt install atom &&\
-apm install --package-file atom_package_list.txt
+apm install --package-file atom_package_list.txt &&\
 git config --global core.editor "atom"
 ```
 
