@@ -23,7 +23,7 @@ ssh-add ~/.ssh/id_rsa
 ## Add it to Github Account
 ```
 cat ~/.ssh/id_rsa.pub | pbcopy &&\
-open http://github.com
+open https://github.com/settings/ssh/new
 ```
 # Download this file
 ```
