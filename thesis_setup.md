@@ -1,7 +1,20 @@
+# Mendeley
+## Install
+```
+sudo apt-get install mendeleydesktop
+```
+
+## Papers directory
+```
+cd ~/workspace &&\
+mkdir mendeley_papers
+```
+
 # Repos
 ## Clone them
 
 ```
+cd ~/workspace &&\
 g clone git@github.com:zaccharieramzi/understanding-unets.git && \
 g clone git@github.com:zaccharieramzi/local-machine-setup.git && \
 g clone git@github.com:zaccharieramzi/learned_primal_dual.git && \
