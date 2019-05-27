@@ -66,6 +66,13 @@ brew cask install iterm2
 - In Keys, set Hotkey and [follow this website](https://coderwall.com/p/ds2dha/word-line-deletion-and-navigation-shortcuts-in-iterm2) for useful shortcuts.
 - In Profiles, set window transparency (1/3), and style to Full-width, top of the screen.
 - In Advanced/Hotkey, set "If the only window open is a hotkey window"
+
+## fish-like autosuggestions
+(to add in plugins)
+```
+git clone https://github.com/zsh-users/zsh-autosuggestions \ ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+```
+
 ## Tree
 ```
 brew install tree
@@ -74,6 +81,22 @@ brew install tree
 ```
 brew install htop
 ```
+
+## Aliases
+```
+echo '# dev convenience
+alias jn="jupyter notebook"
+alias mkvenv="virtualenv -p /usr/bin/python3.6 venv"
+
+# convenience cd
+function cdvenv(){
+  cd $1;
+  source venv/bin/activate;
+}
+compdef _dirs cdvenv' >> ~/.zshrc
+```
+
+
 # Python
 ```
 brew install python3
