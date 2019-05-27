@@ -15,20 +15,20 @@ This requires password
 # SSH key
 ## Generate it
 ```
-mkdir ~/.ssh
-ssh-keygen -t rsa -b 4096 -C "zaccharie.ramzi@gmail.com" -q -N "" -f ~/.ssh/id_rsa
-eval "$(ssh-agent -s)"
+mkdir ~/.ssh &&\
+ssh-keygen -t rsa -b 4096 -C "zaccharie.ramzi@gmail.com" -q -N "" -f ~/.ssh/id_rsa &&\
+eval "$(ssh-agent -s)" &&\
 ssh-add ~/.ssh/id_rsa
 ```
 ## Add it to Github Account
 ```
-cat ~/.ssh/id_rsa.pub | pbcopy
+cat ~/.ssh/id_rsa.pub | pbcopy &&\
 open http://github.com
 ```
 # Download this file
 ```
-mkdir -p ~/workspace/gists_and_docs
-cd ~/workspace/gists_and_docs
+mkdir -p ~/workspace/gists_and_docs &&\
+cd ~/workspace/gists_and_docs &&\
 git clone git@github.com:zaccharieramzi/local-machine-setup.git
 ```
 # Settings
@@ -36,7 +36,7 @@ Make docker show up and hide automatically
 Use Google calendar in mac calendar : https://support.google.com/calendar/answer/99358?hl=en
 # Install Atom
 ```
-brew cask install atom
+brew cask install atom &&\
 apm install --packages-file atom_package_list.txt
 ```
 # Install Slack
@@ -45,15 +45,15 @@ brew cask install slack
 ```
 # Configure git
 ```
-brew install git-lfs
-git config --global user.name "Zaccharie Ramzi"
+brew install git-lfs &&\
+git config --global user.name "Zaccharie Ramzi" &&\
 git config --global user.email "zaccharie@xbird.io"
 ```
 # Terminal
 ## Zsh and oh-my-zsh
 ```
-brew install zsh zsh-completions zsh-syntax-highlighting
-curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
+brew install zsh zsh-completions zsh-syntax-highlighting &&\
+curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh &&\
 chsh -s /usr/local/bin/zsh
 ```
 This requires password
@@ -79,8 +79,8 @@ brew install python3
 ```
 ## pip
 ```
-curl https://bootstrap.pypa.io/get-pip.py > get-pip.py
-sudo python get-pip.py
+curl https://bootstrap.pypa.io/get-pip.py > get-pip.py &&\
+sudo python get-pip.py &&\
 rm get-pip.py
 ```
 This requires password
