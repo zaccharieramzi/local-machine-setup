@@ -76,7 +76,17 @@ pip install pyqt5
 ## Sparse2d
 ```
 echo '# sparse2d
-export PATH=$PATH:$HOME/workspace/pysap/build/temp.macosx-10.7-x86_64-3.6/extern/bin/' >> ~/.zshrc
+export PATH=$PATH:$HOME/workspace/pysap/build/temp.linux-x86_64-3.6/extern/bin/' >> ~/.zshrc
+```
+
+## ModOpt
+```
+deactivate &&\
+cd ~/workspace/ModOpt &&\
+mkvenv &&\
+cdvenv . &&\
+pip install -e . &&\
+pip install astropy
 ```
 
 ## CUDA & affiliates
