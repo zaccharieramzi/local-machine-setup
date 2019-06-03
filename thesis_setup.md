@@ -76,7 +76,7 @@ pip install pyqt5
 ## Sparse2d
 ```
 echo '# sparse2d
-export PATH=$PATH:$HOME/workspace/pysap/build/' >> ~/.zshrc
+export PATH=$PATH:$HOME/workspace/pysap/build/temp.macosx-10.7-x86_64-3.6/extern/bin/' >> ~/.zshrc
 ```
 
 ## CUDA & affiliates
