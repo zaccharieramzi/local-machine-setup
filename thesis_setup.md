@@ -143,3 +143,13 @@ sh configure --prefix=/usr/local &&\
 make &&\
 sudo make install
 ```
+
+## ModOpt
+```
+deactivate &&\
+cd ~/workspace/ModOpt &&\
+mkvenv &&\
+cdvenv . &&\
+pip install -e . &&\
+pip install astropy
+```
