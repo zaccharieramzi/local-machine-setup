@@ -30,7 +30,8 @@ g clone git@github.com:zaccharieramzi/odl.git && \
 g clone git@github.com:zaccharieramzi/ModOpt.git && \
 g clone git@github.com:zaccharieramzi/pysap-mri.git && \
 g clone git@github.com:zaccharieramzi/pysap.git &&\
-g clone https://github.com/CEA-COSMIC/pysap-astro.git
+g clone https://github.com/CEA-COSMIC/pysap-astro.git &&\
+g clone git@gitlab.inria.fr:parietal/parietal-wiki.git
 ```
 
 ## Set the original repo
