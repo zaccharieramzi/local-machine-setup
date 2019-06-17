@@ -11,6 +11,14 @@ mkdir mendeley_papers
 ```
 
 # Repos
+
+## Gitlab
+```
+cat ~/.ssh/id_rsa.pub &&\
+open https://gitlab.inria.fr/profile/keys
+```
+
+
 ## Clone them
 
 ```
