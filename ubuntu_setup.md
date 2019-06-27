@@ -75,7 +75,21 @@ function cdvenv(){
   cd $1;
   source venv/bin/activate;
 }
-compdef _dirs cdvenv' >> ~/.zshrc
+compdef _dirs cdvenv
+
+# notebook pimping
+alias jnbe="jupyter nbextension enable"
+function jnb_ext(){
+  pip install jupyter_contrib_nbextensions
+  jupyter contrib nbextension install --user
+  jnbe notify/notify
+  jnbe snippets/main
+  jnbe code_prettify/autopep8
+  jnbe codefolding/main
+  jnbe hinterland/hinterland
+  jnbe code_prettify/isort
+  jnbe splitcell/splitcell
+}' >> ~/.zshrc
 ```
 
 # Atom
