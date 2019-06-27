@@ -70,6 +70,7 @@ pip install -e ../ModOpt &&\
 pip install -e ../pysap-astro &&\
 pip install -e ../pysap &&\
 pip install -r ~/workspace/local-machine-setup/python_science_reqs.txt &&\
+jnb_ext &&\
 pip install pyqt5
 ```
 
@@ -119,7 +120,8 @@ make install &&\
 pip install numpy cython pybind11 &&\
 export CPLUS_INCLUDE_PATH=/usr/include/python3.6m &&\
 pip install git+https://github.com/pyNFFT/pyNFFT &&\
-pip install https://github.com/adler-j/adler/archive/master.zip
+pip install https://github.com/adler-j/adler/archive/master.zip &&\
+jnb_ext
 ```
 
 ## Understanding U-Nets
@@ -128,7 +130,8 @@ deactivate &&\
 cd ~/workspace/understanding-unets &&\
 mkvenv &&\
 cdvenv . &&\
-pip install -r requirements.txt
+pip install -r requirements.txt &&\
+jnb_ext
 ```
 
 ## Singularity
