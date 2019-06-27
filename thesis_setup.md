@@ -11,6 +11,14 @@ mkdir mendeley_papers
 ```
 
 # Repos
+
+## Gitlab
+```
+cat ~/.ssh/id_rsa.pub &&\
+open https://gitlab.inria.fr/profile/keys
+```
+
+
 ## Clone them
 
 ```
@@ -22,7 +30,9 @@ g clone git@github.com:zaccharieramzi/odl.git && \
 g clone git@github.com:zaccharieramzi/ModOpt.git && \
 g clone git@github.com:zaccharieramzi/pysap-mri.git && \
 g clone git@github.com:zaccharieramzi/pysap.git &&\
-g clone https://github.com/CEA-COSMIC/pysap-astro.git
+g clone git@github.com:zaccharieramzi/fastmri-reproducible-benchmark.git &&\
+g clone https://github.com/CEA-COSMIC/pysap-astro.git &&\
+g clone git@gitlab.inria.fr:parietal/parietal-wiki.git
 ```
 
 ## Set the original repo
@@ -77,7 +87,17 @@ pip install pyqt5
 ## Sparse2d
 ```
 echo '# sparse2d
-export PATH=$PATH:$HOME/workspace/pysap/build/' >> ~/.zshrc
+export PATH=$PATH:$HOME/workspace/pysap/build/temp.linux-x86_64-3.6/extern/bin/' >> ~/.zshrc
+```
+
+## ModOpt
+```
+deactivate &&\
+cd ~/workspace/ModOpt &&\
+mkvenv &&\
+cdvenv . &&\
+pip install -e . &&\
+pip install astropy
 ```
 
 ## CUDA & affiliates
@@ -147,12 +167,12 @@ make &&\
 sudo make install
 ```
 
-## ModOpt
+
+## FastMRI challenge
 ```
 deactivate &&\
-cd ~/workspace/ModOpt &&\
+cd ~/workspace/fastmri-reproducible-benchmark &&\
 mkvenv &&\
-cdvenv . &&\
-pip install -e . &&\
-pip install astropy
+cdvenv .&&\
+pip install -r ../local-machine-setup/python_science_reqs.txt
 ```
