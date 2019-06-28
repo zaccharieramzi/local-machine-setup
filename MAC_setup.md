@@ -98,7 +98,7 @@ compdef _dirs cdvenv
 # notebook pimping
 alias jnbe="jupyter nbextension enable"
 function jnb_ext(){
-  pip install jupyter_contrib_nbextensions
+  pip install jupyter_contrib_nbextensions autopep8
   jupyter contrib nbextension install --user
   jnbe notify/notify
   jnbe snippets/main
