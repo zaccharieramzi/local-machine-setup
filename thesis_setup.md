@@ -32,7 +32,8 @@ g clone git@github.com:zaccharieramzi/pysap-mri.git && \
 g clone git@github.com:zaccharieramzi/pysap.git &&\
 g clone git@github.com:zaccharieramzi/fastmri-reproducible-benchmark.git &&\
 g clone https://github.com/CEA-COSMIC/pysap-astro.git &&\
-g clone git@gitlab.inria.fr:parietal/parietal-wiki.git
+g clone git@gitlab.inria.fr:parietal/parietal-wiki.git &&\
+g clone git@github.com:zaccharieramzi/thesis-figures.git
 ```
 
 ## Set the original repo
