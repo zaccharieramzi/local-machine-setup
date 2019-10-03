@@ -175,5 +175,7 @@ deactivate &&\
 cd ~/workspace/fastmri-reproducible-benchmark &&\
 mkvenv &&\
 cdvenv .&&\
-pip install -r ../local-machine-setup/python_science_reqs.txt
+pip install -r ../local-machine-setup/python_science_reqs.txt &&\
+pip install -r requirements.txt &&\
+pip install -e .
 ```
