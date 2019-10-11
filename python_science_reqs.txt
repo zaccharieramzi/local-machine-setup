@@ -6,3 +6,4 @@ tqdm
 jupyter
 pylint
 pandas
+ipdb
