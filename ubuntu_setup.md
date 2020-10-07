@@ -79,6 +79,12 @@ function cdvenv(){
 }
 compdef _dirs cdvenv
 
+# debug pytest
+function pytest_debug(){
+  pytest -xs $1 --pdb --pdbcls=IPython.terminal.debugger:Pdb
+}
+compdef _files pytest_debug
+
 # notebook pimping
 alias jnbe="jupyter nbextension enable"
 function jnb_ext(){
