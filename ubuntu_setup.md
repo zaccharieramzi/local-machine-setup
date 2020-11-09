@@ -83,7 +83,12 @@ compdef _dirs cdvenv
 function pytest_debug(){
   pytest -xs $1 --pdb --pdbcls=IPython.terminal.debugger:Pdb
 }
-compdef _files pytest_debug
+compdef '_files -g "*.py"' pytest_debug
+
+function pyprofile(){
+  python -m cProfile $1
+}
+compdef '_files -g "*.py"' pyprofile
 
 # notebook pimping
 alias jnbe="jupyter nbextension enable"
