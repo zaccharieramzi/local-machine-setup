@@ -7,3 +7,4 @@ jupyter
 pylint
 pandas
 ipdb
+pytest
