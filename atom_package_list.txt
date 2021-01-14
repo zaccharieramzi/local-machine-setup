@@ -8,3 +8,4 @@ python-isort
 sort-lines
 multi-cursor
 git-blame
+file-icons
