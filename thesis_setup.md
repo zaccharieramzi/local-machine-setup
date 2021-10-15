@@ -10,6 +10,12 @@ cd ~/workspace &&\
 mkdir mendeley_papers
 ```
 
+# Mattermost
+```
+wget https://releases.mattermost.com/desktop/4.7.2/mattermost-desktop-4.7.2-linux-amd64.deb &&\
+sudo dpkg -i mattermost-desktop-4.7.2-linux-amd64.deb
+```
+
 # Repos
 
 ## Gitlab
