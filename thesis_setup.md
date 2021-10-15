@@ -25,24 +25,17 @@ open https://gitlab.inria.fr/profile/keys
 cd ~/workspace &&\
 g clone git@github.com:zaccharieramzi/understanding-unets.git && \
 g clone git@github.com:zaccharieramzi/local-machine-setup.git && \
-g clone git@github.com:zaccharieramzi/learned_primal_dual.git && \
-g clone git@github.com:zaccharieramzi/odl.git && \
 g clone git@github.com:zaccharieramzi/ModOpt.git && \
 g clone git@github.com:zaccharieramzi/pysap-mri.git && \
 g clone git@github.com:zaccharieramzi/pysap.git &&\
 g clone git@github.com:zaccharieramzi/fastmri-reproducible-benchmark.git &&\
-g clone https://github.com/CEA-COSMIC/pysap-astro.git &&\
 g clone git@gitlab.inria.fr:parietal/parietal-wiki.git &&\
-g clone git@github.com:zaccharieramzi/thesis-figures.git
+g clone git@github.com:zaccharieramzi/thesis-figures.git 
 ```
 
 ## Set the original repo
 ```
-cd learned_primal_dual &&\
-g remote add upstream https://github.com/adler-j/learned_primal_dual &&\
-cd ../odl &&\
-g remote add upstream https://github.com/odlgroup/odl &&\
-cd ../ModOpt &&\
+cd ModOpt &&\
 g remote add upstream https://github.com/CEA-COSMIC/ModOpt &&\
 cd ../pysap-mri &&\
 g remote add upstream https://github.com/CEA-COSMIC/pysap-mri &&\
@@ -119,30 +112,6 @@ sudo apt install cuda9.0 cuda-cublas-9-0 cuda-cufft-9-0 cuda-curand-9-0 \
 sudo apt update &&\
 sudo apt install libnvinfer4=4.1.2-1+cuda9.0 &&\
 reboot
-```
-
-## Learned Primal Dual
-```
-deactivate &&\
-cd ~/workspace/learned_primal_dual &&\
-mkvenv &&\
-cdvenv . &&\
-pip install -r requirements.txt &&\
-sudo apt-get install build-essential libtool autoconf automake libboost-dev &&\
-cd ../ &&\
-g clone git@github.com:astra-toolbox/astra-toolbox.git &&\
-cd astra-toolbox/build/linux &&\
-sh autogen.sh &&\
-sh configure --with-cuda=/usr/local/cuda \
-            --with-python=python \
-            --with-install-type=module &&\
-make &&\
-make install &&\
-pip install numpy cython pybind11 &&\
-export CPLUS_INCLUDE_PATH=/usr/include/python3.6m &&\
-pip install git+https://github.com/pyNFFT/pyNFFT &&\
-pip install https://github.com/adler-j/adler/archive/master.zip &&\
-jnb_ext
 ```
 
 ## Understanding U-Nets
