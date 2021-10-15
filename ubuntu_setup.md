@@ -152,3 +152,9 @@ echo deb http://repository.spotify.com stable non-free | sudo tee /etc/apt/sourc
 sudo apt-get update &&\
 sudo apt-get install spotify-client
 ```
+
+# Slack
+```
+wget https://downloads.slack-edge.com/linux_releases/slack-desktop-4.12.2-amd64.deb &&\
+sudo dpkg -i slack-desktop-4.12.2-amd64.deb
+```
