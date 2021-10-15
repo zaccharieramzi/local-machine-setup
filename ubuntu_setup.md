@@ -158,3 +158,9 @@ sudo apt-get install spotify-client
 wget https://downloads.slack-edge.com/linux_releases/slack-desktop-4.12.2-amd64.deb &&\
 sudo dpkg -i slack-desktop-4.12.2-amd64.deb
 ```
+
+# Bitwarden
+```
+wget https://vault.bitwarden.com/download/?app=desktop&platform=linux&variant=deb &&\
+sudo dpkg -i Bitwarden-1.28.3-amd64.deb
+```
