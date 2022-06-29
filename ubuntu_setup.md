@@ -128,21 +128,12 @@ sudo add-apt-repository ppa:deadsnakes/ppa &&\
 sudo apt install python3.9 python3.9-dev python3.9-venv python3.9-distutils python3-pip
 ```
 
-# Spotify
+# Spotify, Slack, Bitwarden
 ```
-curl -sS https://download.spotify.com/debian/pubkey_0D811D58.gpg | sudo apt-key add - &&\
-echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list &&\
-sudo apt-get update && sudo apt-get install spotify-client
+sudo snap install spotify slack bitwarden
 ```
 
-# Slack
+# Vim
 ```
-wget https://downloads.slack-edge.com/linux_releases/slack-desktop-4.12.2-amd64.deb &&\
-sudo dpkg -i slack-desktop-4.12.2-amd64.deb
-```
-
-# Bitwarden
-```
-wget https://vault.bitwarden.com/download/?app=desktop&platform=linux&variant=deb &&\
-sudo dpkg -i Bitwarden-1.28.3-amd64.deb
+sudo apt install vim
 ```
