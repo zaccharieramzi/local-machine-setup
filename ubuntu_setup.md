@@ -137,3 +137,10 @@ sudo snap install spotify slack bitwarden mattermost-desktop skype zoom-client
 ```
 sudo apt install vim
 ```
+
+# Mendeley
+```
+wget https://static.mendeley.com/bin/desktop/mendeley-reference-manager-2.73.0-x86_64.AppImage &&\
+chmod +x mendeley-reference-manager-2.73.0-x86_64.AppImage &&\
+./mendeley-reference-manager-2.73.0-x86_64.AppImage
+```
