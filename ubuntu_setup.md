@@ -118,22 +118,10 @@ sudo apt-get install code
 
 # Python
 ```
-sudo add-apt-repository ppa:jonathonf/python-3.6 &&\
-sudo apt-get update &&\
-sudo apt-get install python3.6 python3-distutils python3.6-dev &&\
-sudo apt-get install python
-```
-
-## pip
-```
-curl https://bootstrap.pypa.io/get-pip.py > get-pip.py &&\
-sudo python get-pip.py &&\
-rm get-pip.py
-```
-
-## virtualenv
-```
-sudo pip install virtualenv
+sudo apt update &&\
+sudo apt install software-properties-common &&\
+sudo add-apt-repository ppa:deadsnakes/ppa &&\
+sudo apt install python3.9 python3.9-dev python3.9-venv python3.9-distutils python3-pip
 ```
 
 # Spotify
