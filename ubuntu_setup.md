@@ -69,7 +69,8 @@ sudo apt-get install htop
 ```
 echo '# dev convenience
 alias jn="jupyter notebook"
-alias mkvenv="virtualenv -p /usr/bin/python3.6 venv"
+alias mkvenv="python3 -m venv venv"
+alias mkvenv9="python3.9 -m venv venv"
 alias tb='tensorboard --logdir=./logs'
 alias tbdev='tensorboard dev upload --logdir logs'
 
